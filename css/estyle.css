@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-color: #111;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 100px;
+    position: fixed;
+    top: 0;
+}
+header img{
+    width: 230px;
+}
+nav, ul{
+    list-style-type: none;
+}
+header nav, ul{
+display: flex;
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav li a:hover{
+    color: #ccc;
+}
+nav li{
+    margin: 0 20px;
+}
+/* Banner */
+.banner{
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 870px;
+    color: #fff;
+    text-align: center;
+    padding: 280px 0;
+    margin-top: 104px;
+}
+.banner h1{
+    font-size: 55px;
+    padding-bottom: 30px;
+}
+.banner p{
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+.banner a{
+    color: #000;
+    background: #fff;
+    font-size: 17px;
+    padding: 18px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.banner a:hover{
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+}
+/* Sobre */
+.secao{
+    padding: 120px 100px;
+}
+.secao h2{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.sobre p{
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.video{
+    width: 100%;
+    height: 550px;
+}
+/* Serviços */
+.servicos{
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+.colunas{
+    display: flex;
+}
+.servicos article{
+    background: rgba(242, 242, 242, 0.8);
+    color: #222;
+    margin: 20px 6px;
+    padding: 50px 13px;
+    text-align: center;
+    border-radius: 8px;
+}
+.servicos img{
+    margin-bottom: 28px;;
+}
+.servicos h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.servicos p{
+    margin-bottom: 25px;
+}
+.servicos a{
+    background: #222;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.servicos a:hover{
+    background: rgba(34, 34, 34, 0.8);
+}
+/* Produto */
+.produtos article{
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 20px 46px;
+    padding: 15px 5px;
+    border-radius: 8px;
+}
+.produtos h3{
+    padding-bottom: 10px;
+}
+.produtos a{
+    text-decoration: none;
+}
+.produtos img{
+    width: 100%;
+}
+/* Contato */
+.contato{
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+.formCont{
+    padding: 0 10px;
+    width: 50%;
+}
+.formCont input, textarea{
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+.formCont textarea{
+    height: 200px;
+}
+.botao{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    color: #333;
+}
+.botao:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+.mapa{
+    width: 50%;
+}
+.mapa iframe{
+    width: 100%;
+    height: 395px;
+}
+/* Roda pé */
+footer{
+    background: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+/* Breakpoint */
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        width: 180px;
+        padding-bottom: 15px;
+    }
+    nav li{
+        margin: 0 15px;
+    }
+    .banner{
+           padding: 90px 25px;
+           height: 480px;
+    }
+    .colunas{
+        flex-direction: column;
+    }
+    .secao{
+        padding: 120px 20px;
+    }
+    .video{
+        width: 100%;
+        height: 220px;
+    }
+    .formCont input, textarea{
+        flex-direction: column;
+        width: 100%;
+    }
+    .formCont{
+        width: 100%;
+    }
+    .mapa{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+}
