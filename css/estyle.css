@@ -45,7 +45,7 @@ nav li{
     color: #fff;
     text-align: center;
     padding: 280px 0;
-    margin-top: 104px;
+    margin-top: 86px;
 }
 .banner h1{
     font-size: 55px;
@@ -106,7 +106,7 @@ nav li{
     border-radius: 8px;
 }
 .servicos img{
-    margin-bottom: 28px;;
+    margin-bottom: 28px;
 }
 .servicos h3{
     font-size: 30px;
@@ -196,6 +196,32 @@ footer{
 
 
 /* Breakpoint */
+@media (max-width: 1000px){
+    header img{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .banner{
+        padding: 90px 25px;
+        height: 480px;
+    }
+    header img{
+        width: 200px;
+        padding-top: 10px;
+    }
+    .colunas{
+        flex-direction: column;
+    }
+    .formCont{
+        width: 100%;
+    }
+    .mapa{
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 700px){
     header{
         flex-direction: column;
